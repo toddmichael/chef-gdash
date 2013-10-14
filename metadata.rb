@@ -11,3 +11,7 @@ depends "graphite"
 depends "unicorn"
 
 suggests "iptables"
+
+%w( ubuntu centos ).each do |os|
+  supports os
+end
